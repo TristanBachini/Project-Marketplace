@@ -1,0 +1,30 @@
+.ze-body{
+    background-color: black;
+}
+.search-form {
+    margin: 0 1rem;  
+    flex-grow: 1; /* <-- THE SECRET SAUCE! */
+    min-width: 25rem;
+    justify-self: center;
+    position: absolute;
+    padding-left: 150px;
+    padding-right: 500px;
+    width: 100%;
+
+}
+.search-box {
+width: 100%;  
+min-width: 10rem;
+padding: .4rem;
+background-color: #ffb;
+justify-self: center;
+background-color: antiquewhite;
+}
+
+.login-bar{
+    display:inline-block;
+    background-color: white;
+}
+.bar{
+    background-color: white;
+}

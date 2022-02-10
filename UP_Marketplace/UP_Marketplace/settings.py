@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from logging import root
 from pathlib import Path
 import os
 
@@ -24,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a#k&4$#_zyng4o6-qn!@r+jvi(h6i13kgzf=-)14#t&^vq8*7)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['tristanbachini-upmarketplace.herokuapp.com','127.0.0.1']
 
@@ -79,10 +80,10 @@ WSGI_APPLICATION = 'UP_Marketplace.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ['DATABASE_ENGINE'],
-        'NAME': os.environ['DATABASE_MARKETPLACE'],
-        'USER': os.environ['DATABASE_USER'],
-        'PASSWORD': os.environ['DATABASE_PASSWORD'],
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Marketplace',
+        'USER': 'root',
+        'PASSWORD': 'Iamtheking27',
         'PORT': 3306,
         'HOST': '127.0.0.1',
     }
