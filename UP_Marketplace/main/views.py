@@ -5,3 +5,4 @@ def home(request):
     m = 1
     data ={"number":m}
     return render(request,"main/home.html",data)
+

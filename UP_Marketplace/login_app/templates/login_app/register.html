@@ -1,0 +1,15 @@
+{% extends 'navbar/navbar.html' %}
+{% block content %} {% load static %}
+<div class="container-sm register">
+    <div class="container overflow-hidden">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-1 border bg-light">{{form.password1}}</div>
+          </div>
+          <div class="col">
+            <div class="p-1 border bg-light">{{form.username}}</div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

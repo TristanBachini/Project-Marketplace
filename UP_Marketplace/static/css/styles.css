@@ -37,8 +37,17 @@ background-color: white;
     padding-right: .4in;
     font-size: small;
 }
-.body{
-    background-color: black;
+
+/* register page */
+.register{
+    border: .1in;
+    width: 6in;
+    margin-top: 4in;
+    border: black;
+}
+
+.register-fields{
+    
 }
 
 
