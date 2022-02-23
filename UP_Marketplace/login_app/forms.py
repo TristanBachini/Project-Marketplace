@@ -16,8 +16,10 @@ from django.contrib.auth import get_user_model
 class UserForm(UserCreationForm):
     attrs = {'class': 'form-control', 'id': 'floatingInput',
              'placeholder': 'Enter Password', 'required': True}
+    attrs1 = {'class': 'form-control', 'id': 'floatingInput',
+             'placeholder': 'Re-Enter Password', 'required': True}
     password1 = CharField(widget=PasswordInput(attrs=attrs))
-    password2 = CharField(widget=PasswordInput(attrs=attrs))
+    password2 = CharField(widget=PasswordInput(attrs=attrs1))
 
     class Meta:
         User = get_user_model()

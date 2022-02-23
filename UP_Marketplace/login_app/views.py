@@ -8,4 +8,10 @@ def login(request):
 def register(request):
     form = UserForm()
     data = {"form":form}
+    if(request.method=='POST'):
+        form = UserForm(request.POST)
+        if form.is_valid:
+            print("valid naman")
+        else:
+            print(form.errors)
     return render(request, "login_app/register.html",data)
