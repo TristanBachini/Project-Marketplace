@@ -26,7 +26,7 @@ background-color: white;
 }
 
 .bar{
-    background-color: white;
+    color: rgb(216, 215, 214);
     text-align: right;
    
 }
@@ -41,13 +41,25 @@ background-color: white;
 /* register page */
 .register{
     border: .1in;
-    width: 6in;
+    width:10in;
+    height: 6in;
     margin-top: 4in;
     border: black;
+    background-color: rgba(238, 157, 171, 0.49);
+    justify-self: center;
 }
 
-.register-fields{
-    
+.left-register{
+    min-width: 2in;
+    max-width: 3in;
+    margin-left: 1in;
 }
+.right-register{
+    min-width: 2in;
+    max-width: 3in;
+    margin-left: 1in;
+}
+
+
 
 
